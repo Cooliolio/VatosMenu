@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe4dc"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            />
+
+        <TextView
+            android:id="@+id/hookahslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dranken"
+            android:textSize="60sp" />
+
+        <!-- Dranken -->
+        <GridLayout
+            android:id="@+id/dranken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- frisdranken -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/frisdranken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frisdranken"
+                        android:textSize="35sp"
+                        android:layout_alignParentRight="true" />
+
+                    <ImageView
+                        android:id="@+id/frisdrankenbtn"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/drinksvthr"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- warme dranken -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/warmedranken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/warmedranken"
+                        android:textSize="35sp"
+                        android:layout_alignParentRight="true" />
+
+                    <ImageView
+                        android:id="@+id/warmdrankbtn"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/drinksvthr"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- specials -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/specials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/specials"
+                        android:textSize="35sp"
+                        android:layout_alignParentRight="true" />
+
+                    <ImageView
+                        android:id="@+id/specialsbtn"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/drinksvthr"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- energie dranken -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/energie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energiedranken"
+                        android:textSize="35sp"
+                        android:layout_alignParentRight="true" />
+
+                    <ImageView
+                        android:id="@+id/energiebtn"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/drinksvthr"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </TableLayout>
+
+</ScrollView>

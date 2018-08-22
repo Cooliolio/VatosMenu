@@ -1,0 +1,852 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f6ee"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+        <TextView
+            android:id="@+id/hookahslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/frisdranken"
+            android:textSize="50sp" />
+
+        <!-- Dranken -->
+        <GridLayout
+            android:id="@+id/dranken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="8">
+
+            <!-- Coca Cola -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/frisdranken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Coca Cola"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/cola" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/colalight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Coca Cola Light"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/colalight" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/iceteagreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Lipton Ice Tea Green"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/iceteagreen" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loozaace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Looza Ace"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/loozaace" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loozaappelkers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Looza Appelkers"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/loozaappelkers" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loozaorange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Looza Orange"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/loozaorange" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loozakiwi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Looza Kiwi"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/loozakiwi" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/schweppestonic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Schweppes Tonic"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/schweppestonic" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/schweppesagrum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Schweppes Agrum"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/schweppesagrum" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/spareine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Spa Reine"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/spareine" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/spabruis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Spa Bruis"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/spabruis" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tonnivrucht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Tönissteiner Vruchtenkorf"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/tonivruchtenkorf" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tonnicitroen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Tönissteiner Citroen"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/tonicitroen" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/colazero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Coca Cola Zero"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/colazero" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fanta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Fanta"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/fanta" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Gini"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/gini" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/icetea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Lipton Ice Tea"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/icetea" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yasinyavuz.vatosmenu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShishaActivity"></activity>
+        <activity android:name=".DrankActivity"></activity>
+        <activity android:name=".dranken.FrisdrankActivity"></activity>
+        <activity android:name=".dranken.EnergieActivity"></activity>
+        <activity android:name=".dranken.WarmeDrankenActivity"></activity>
+        <activity android:name=".dranken.SpecialsActivity"></activity>
+        <activity android:name=".SnacksActivity"></activity>
+        <activity android:name=".DessertsActivity"></activity>
+    </application>
+
+</manifest>

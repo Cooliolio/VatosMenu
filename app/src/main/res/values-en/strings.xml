@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vatos Menu</string>
+    <string name="desserts">Desserts</string>
+    <string name="dranken">Drinks</string>
+    <string name="shisha_s">Hookahs</string>
+    <string name="snacks">Snacks</string>
+</resources>

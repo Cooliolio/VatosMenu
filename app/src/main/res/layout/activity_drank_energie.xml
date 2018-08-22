@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe4dc"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <!--  -->
+        <TextView
+            android:id="@+id/hookahslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/energiedranken"
+            android:textSize="50sp" />
+
+        <GridLayout
+            android:id="@+id/dranken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="8">
+
+            <!-- Aquarius Red -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/aquarood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Aquarius Red Peach"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_3"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/aquarood"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Aquarius Blue -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/aquablue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/aquabluetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Aquarius Blue Berry"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/aquabluetxt"
+                        android:text="@string/price_3"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/aquablauw" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Nalu -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/nalu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/nalutxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Nalu"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/nalutxt"
+                        android:text="@string/price_3"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/nalu" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Nalu Exotic -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/naluexotic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/naluexotictxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Nalu Exotic"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/naluexotictxt"
+                        android:text="@string/price_3"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/naluexotic" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Red Bull -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/redbull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/redbulltxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Red Bull"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/redbulltxt"
+                        android:text="@string/price_3"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/redbull" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </TableLayout>
+
+</ScrollView>

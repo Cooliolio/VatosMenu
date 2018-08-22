@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Vatos Menu</string>
+    <string name="dranken">Dranken</string>
+    <string name="shisha_s">Hookahs</string>
+    <string name="snacks">Snacks</string>
+    <string name="desserts">Desserts</string>
+    <string name="hookahs">Hookahs</string>
+    <string name="sphookahs">Special Hookahs</string>
+    <string name="price_15">€15.00</string>
+    <string name="price_12">€12.00</string>
+    <string name="frisdranken">Frisdranken</string>
+    <string name="price_2e50">€2.50</string>
+    <string name="price_5">€5.00</string>
+    <string name="warmedranken">Warme dranken</string>
+    <string name="specials">Specials</string>
+    <string name="energiedranken">Energiedranken</string>
+    <string name="price_6">€6.00</string>
+    <string name="price_3">€3.00</string>
+</resources>

@@ -1,0 +1,921 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f6ee"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+        <TextView
+            android:id="@+id/hookahslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/hookahs"
+            android:textSize="50sp" />
+
+        <!-- Hookahs -->
+        <GridLayout
+            android:id="@+id/hookahs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="5">
+
+            <!-- Appel -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/appel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Appel"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- BLueberry -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/blueberry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Blueberry"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Kiwi -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/kiwi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Kiwi"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Munt -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/munt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Munt"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Sportlife -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/sportlife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Sportlife"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Vanille -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/vanille"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Vanille"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Framboos -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/framboos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Framboos"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Druif -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/druif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Druif"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_12"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/sphookahlbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sphookahs"
+            android:textSize="50sp" />
+
+        <!-- Special Hookahs -->
+        <GridLayout
+            android:id="@+id/sphookahs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="5">
+
+            <!-- Falimchill -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/falimchill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Falimchill"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Six Gums -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/sixgums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Six Gums"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Berlin Night -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/berlinnight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Berlin Night"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Okolom -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/okolom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Okolom"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Blue Raspberry -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/bluerasp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="3"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Blue \nRaspberry"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/nargilesise"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imageView2" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Lemonchill -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/lemonchill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Lemonchill"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Love 66 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/lovesixsix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Love 66"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Voltage -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/voltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Voltage"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Pink Lemonade -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/pinklem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Pink Lemonade"
+                        android:textSize="@dimen/hookah_title_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Cold Melon -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/coldmelon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_row="0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Cold Melon"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="43dp"
+                        android:text="@string/price_15"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/nargilesise" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </TableLayout>
+</ScrollView>

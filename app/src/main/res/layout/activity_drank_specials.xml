@@ -1,0 +1,226 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe4dc"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+        <TextView
+            android:id="@+id/hookahslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/specials"
+            android:textSize="50sp" />
+
+        <!-- Dranken -->
+        <GridLayout
+            android:id="@+id/dranken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="8">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mojito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Mojito"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_6"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/mojito" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mojitoaardbei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Mojito Aardbei"
+                        android:textSize="@dimen/product_title_font_size" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="@string/price_2e50"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/mojitoaarbei" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/milkshake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/cardwidth"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Milkshake"
+                        android:textSize="35sp" />
+
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/product_image_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/milkshake" />
+
+                    <LinearLayout
+                        android:id="@+id/smaken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView"
+                            android:text="•Vanille"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView3"
+                            android:text="•Chocolade"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView4"
+                            android:text="•Aardbei"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/smaken"
+                        android:text="@string/price_6"
+                        android:textSize="25sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </TableLayout>
+</ScrollView>
